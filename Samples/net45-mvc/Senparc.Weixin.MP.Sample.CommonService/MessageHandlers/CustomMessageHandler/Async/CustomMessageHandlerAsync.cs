@@ -1,5 +1,5 @@
 ﻿/*----------------------------------------------------------------
-    Copyright (C) 2019 Senparc
+    Copyright (C) 2020 Senparc
     
     文件名：CustomMessageHandlerAsync.cs
     文件功能描述：自定义MessageHandler（异步方法）
@@ -9,30 +9,13 @@
 ----------------------------------------------------------------*/
 
 //DPBMARK_FILE MP
-using System;
-using System.Diagnostics;
-using System.Linq;
-using System.Threading.Tasks;
-using Senparc.NeuChar.Context;
-using Senparc.Weixin.Exceptions;
-using Senparc.CO2NET.Extensions;
-using Senparc.Weixin.HttpUtility;
-using Senparc.Weixin.MP.AdvancedAPIs;
-using Senparc.Weixin.MP.Entities;
-using Senparc.Weixin.MP.Helpers;
-using Senparc.Weixin.MP.MessageHandlers;
-using Senparc.Weixin.MP.Sample.CommonService.Download;
-using Senparc.Weixin.MP.Sample.CommonService.Utilities;
-using Senparc.NeuChar.Entities;
 using System.Threading;
+using System.Threading.Tasks;
 
 #if NET45
 using System.Web;
 #else
-using Microsoft.AspNetCore.Http;
 #endif
-
-//TODO:提供异步上下文消息方法
 
 namespace Senparc.Weixin.MP.Sample.CommonService.CustomMessageHandler
 {
